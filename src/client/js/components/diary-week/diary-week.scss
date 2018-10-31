@@ -1,0 +1,51 @@
+.component-week {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
+    border: solid 15px #b9cde5;
+    padding: 5px 20px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAACKCAYAAABLjn9vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAADYUlEQVR4Xu3avWsUURRA8fz/hYVgIVgIFhZ2IkKiSFBUEC2CLkQCIsQkq4T4LVqN84QtHO5sdnfeezNnOcWvuSTzknuyu5lNdpqm2Uqz2azZ29v7Zz6ft6P446jC4TYwHJThoAwHZTgow0EZDspwUIaDMhyU4aAMB2U4KMNBGQ7KcFCGgzIclOGgDAdlOCjDQRkOynBQhoMyHJThoAwHZTgow0EZDspwUIaDMhyU4aAMB2U4KMNBGQ7KcFCGgzIclOGgDAdlOCjDQRkOynBQhoMyHJThoAwHZTgow0EZDspwUIaDMhyU4aAMB2U4KMNBGQ7KcFCGgzIclOGgDAdlOCjDQRkOynBQhoMyHJThoAwHZTgow0EZDspwUIaDMhyU4aAMB2U4KMNBGQ7KcFCGgzIclOGgDAdlOCjDQRkOynBQhoMyHJThoAwHZTgow0EZDspwUIaDMhyU4aAMB2W4NRyd/Woevv7c3Hn+6T+7BxfN4cnP9kPizythzHA19hAO1/Xq3bfm2u5Jc+Xe8VJX739onhx+bT8lvk5OY4SruYdwuI6b+/Pwi1smfXPH57/bT4+vmUPtcLX3EA5XkZ4OVvnpWubN8Y/2UvH1h6oVbqw9hMNVpId79EWsq9Qjr1a4sfYQDi9z49FZePgm0k9r9/o51Ag35h7C4TLpBTg6eIj92Zf20vF5myodbuw9hMNlcj01dHXPGap0uLH3EA77pHuQ6LAcXhzlvU0oGW4KewiHfdINZHRYDukGtXveECXDTWEP4bBPumh0WA7phb573hAlw01hD+GwT87foiLd84YoGW4KewiHfa4/OA0PyqV73hAlw01hD+Gwz+2nH8ODckjL6J43RMlwU9hDOOxz9+V5eFgOtx7nXW7JcFPYQzjsc/D+e3hYDrn/alAy3BT2EA6XiQ7L4fTiT3v5+MxNlAyXRN9DDqvuIRwuU+IeJvc9XFI63Nh7CIeXyf12T/f6OZQOl4y5h3B4mZxv+eR+q2uhRrgx9xAOV5FeRKMvYB3p6aZ73VxqhEvG2kM4XFX6idv06eLZ2zKPtIVa4ZIx9hAO17XOfU26eS39/yZJzXALNfcQDjeV/hAY/dNMem8v/btajWALY4RbqLGHcLgNxgxXQzjcBoaDMhyU4aC2O1yz8xc/o8wZduHZHwAAAABJRU5ErkJggg==);
+    background-position-x: center;
+    background-repeat: repeat-y;
+
+    .week-header {
+        &_dates,
+        &_month {
+            display: inline-block;
+            vertical-align: top;
+        }
+        &_dates {
+            font-size: 2.5rem;
+            padding-bottom: 0;
+            margin: 0;
+            font-weight: normal;
+        }
+        &_month {
+            margin-top: 0;
+            padding: 0.5rem 2.0rem 0;
+            font-size: 1.1rem;
+            font-weight: normal;
+            font-weight: bold;
+        }
+        &-left {
+            float: left;
+            text-align: left;
+        }
+        &-right {
+            float: right;
+            text-align: right;
+        }
+        &_go {
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+
+    diary-day tr.day-header {
+        display: none;
+    }
+    diary-day:first-child tr.day-header {
+        display: table-row;
+    }
+}
+

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "variables";
+@import "mixins";
+@import "keyframes";
+@import "~font-awesome/scss/font-awesome";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $bg;
+  padding: 10px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  margin-top: 50px;
+}

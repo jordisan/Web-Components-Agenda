@@ -1,0 +1,81 @@
+.component-day {
+    $bordercolor: #bbb;
+    $todaycolor: yellow;
+
+    clear: both;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .day-table {
+        border-collapse: collapse;
+        width: 43%;
+        table-layout: fixed;
+
+        &.day-left {
+            float: left;
+        }
+        &.day-right {
+            float: right;
+        }
+    }
+    
+    .day {
+        &.today {
+            background-color: $todaycolor;
+        }
+    
+        td, th {
+            border: solid 1px $bordercolor;
+            padding: 1px 3px;
+        }
+    
+        &-header th {
+            background-color: #ddd;
+            text-align: center;
+        }    
+    
+        .task-row {
+            width: 100%;
+            height: 1.2rem;
+        }
+    
+        .date {
+            width: 4.0rem;
+            &-weekday,
+            &-day {
+                display: block;
+                line-height: 1;
+            }
+            &-weekday {
+                font-size: 1.4rem;
+            }
+            &-day {
+                font-size: 1.7rem;
+            }
+            &-name {
+                font-size: 0.6rem;
+                font-style: italic;
+                overflow: hidden;
+            }
+        }
+        td.date {
+            color: darken($bordercolor, 20%);
+            text-align: center;
+        }
+        .time {
+            width: 4.0rem;
+        }
+        .done {
+            width: 3.0rem;
+            text-align: center;
+
+            input {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
