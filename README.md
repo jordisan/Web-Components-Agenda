@@ -3,6 +3,8 @@ Agenda demo project using Web Components. See it online at http://agenda.jordisa
 
 Based on https://github.com/vardius/web-components-webpack-es6-boilerplate
 
+![Screenshot of Agenda](./agenda.png)
+
 ## Build and execution (NPM, Node v8.12.0):
 * npm install
 * npm run build
