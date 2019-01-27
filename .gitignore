@@ -2,3 +2,7 @@
 *.log*
 node_modules
 build
+.vscode/settings.json
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
+.vs/Web-Components-Agenda/v15/.suo
